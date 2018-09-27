@@ -1,0 +1,20 @@
+# Codeception Test Suite Configuration
+#
+# Suite for acceptance tests.
+# Perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+actor: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver:
+            browser: chrome
+            window_size: maximize
+#            port: 9515
+            url: https://www.walmart.com/
+        - \Helper\Acceptance
+gherkin:
+  contexts:
+    default:
+    - AcceptanceTester
+    - Context/SecondContext.php
