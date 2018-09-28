@@ -13,4 +13,7 @@ gherkin:
     default:
     - AcceptanceTester
     - SecondContext
-
+reporters:
+  xml: Codeception\PHPUnit\Log\JUnit
+  html: Codeception\PHPUnit\ResultPrinter\HTML
+  report: Codeception\PHPUnit\ResultPrinter\Report
