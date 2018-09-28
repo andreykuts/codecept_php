@@ -2,7 +2,6 @@
 
 use Page\walmartPage;
 use Codeception\Step\Assertion;
-use Behat\Behat\Context;
 require_once 'Helper/XLSXReader.php';
 
 
@@ -21,7 +20,7 @@ require_once 'Helper/XLSXReader.php';
  *
  * @SuppressWarnings(PHPMD)
 */
-class AcceptanceTester extends \Codeception\Actor implements Context\Context
+class AcceptanceTester extends \Codeception\Actor implements Behat\Behat\Context\Context
 {
     use _generated\AcceptanceTesterActions;
 

@@ -1,9 +1,8 @@
 <?php
 
 use Page\SecondPage;
-use Behat\Behat\Context;
 
-class SecondContext extends AcceptanceTester implements Context\Context
+class SecondContext extends AcceptanceTester implements Behat\Behat\Context\Context
 {
     /**
      * @When I click on button :arg1 in Second context
